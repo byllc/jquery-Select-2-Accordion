@@ -1,0 +1,17 @@
+ Author: Bill Chapman
+   Desc:  Turn a select box in to an accordion
+   Code Standards: methods and hash keys are camelCase and variables are under_scored
+   Requirements: jquery-ui for accordion and modal
+   Usage: Works on a select box with options groups, converts it to an accordion
+   Output: HTML for accordion format that is than converted to accordion by jquery ui
+   
+  <div id="accordion">
+    <a href="#">First header</a>
+    <div>First content</div>
+    <a href="#">Second header</a>
+    <div>Second content</div>
+   </div>
+
+   Usage: $('element').accordionSelect({options},callBackMethod = function(id,value) );
+   The call back method will have an id and a value passed in synononmous to value and text 
+   for a select box entry
